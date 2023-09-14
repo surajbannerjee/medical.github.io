@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- animation link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- silk slider link -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>medical</title>
+</head>
+
+<body id="sign_up">
+
+
+    <section class="user_login_sec">
+        <div class="user_content">
+            <div class="log_in_content_left">
+                <div class="login_brand"><img src="images/logo-white.png"></div>
+                <p>Login using social media to get quick access</p>
+                <a href="" class="btn sign_btn facebook_btn"><span><i class="fab fa-facebook-f"></i></span>Sign in with Facebook</a>
+                <a href="" class="btn sign_btn twitter_btn"><span><i class="fab fa-twitter"></i></span>Sign in with Twitter</a>
+                <a href="" class="btn sign_btn google_btn"><span><i class="fab fa-google-plus-g"></i></span>Sign in with Google</a>
+            </div>
+            <div class="log_in_content_right">
+                <h3>Sign Up for free</h3>
+                
+
+                <form>
+                    <div class="form-group">
+                        <input type="email" name="" class="form-control login_input" placeholder="Email Adress">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control login_input" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="" class="form-control login_input" placeholder="Password">
+                    </div>
+                </form>
+
+                <p class="condition_para">I agree to the <a href="">Privacy Policy</a> and <a href="">Terms of Use</a></p>
+                <a href="" class="form-control log_in_btn">log in</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/slick.js"></script> -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 20,
+                time: 4000
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 80) {
+                    $('.navbar_menu').addClass("sticky_header");
+                } else {
+                    $('.navbar_menu').removeClass("sticky_header");
+                }
+            });
+
+            // Back to top button
+
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll').addClass("down");
+                    } else {
+                        $('.scroll').removeClass("down");
+                    }
+                });
+                $('.scroll').click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+            // Back to top button
+
+
+            $('.slider_active').owlCarousel({
+                loop: true,
+                margin: 30,
+                center: false,
+                stopOnHover: false,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplayTimeout: 3500,
+                autoplaySpeed: 900,
+                autoplayHoverPause: true,
+                // navText: ['<i class="fas fa-arrow-circle-left"></i>', '<i class="fas fa-arrow-circle-right"></i>'],
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+
+
+            $('.image_slider_active').owlCarousel({
+                loop: true,
+                margin: 30,
+                center: true,
+                stopOnHover: false,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplayTimeout: 3500,
+                autoplaySpeed: 900,
+                autoplayHoverPause: true,
+                navText: ['<i class="fas fa-arrow-circle-left"></i>', '<i class="fas fa-arrow-circle-right"></i>'],
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+
+
+
+
+
+
+
+        })
+    </script>
+</body>
+
+</html>
